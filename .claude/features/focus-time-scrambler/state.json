@@ -1,0 +1,11 @@
+{
+  "slug": "focus-time-scrambler",
+  "title": "Focus Time Scrambler",
+  "created": "2026-11-08T09:45:56Z",
+  "workspace_root": "/Users/ioannshestopalov/Programming/speckit/my-project/e-dungeon",
+  "migrated_from": "spec-kit: specs/001-focus-time-scrambler (2026-06-21)",
+  "contracts": { "owner": null, "generated": false },
+  "projects": [
+    { "name": "time-scramble", "root": ".", "manifest": "time-scramble.xcodeproj", "stack": "swift", "role": "standalone", "stage": "planned" }
+  ]
+}

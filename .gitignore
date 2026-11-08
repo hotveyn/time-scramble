@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+
+# Xcode: per-user state (window layout, scheme order, breakpoints)
+xcuserdata/
+
+# Build output
+build/
+DerivedData/
+.build/
