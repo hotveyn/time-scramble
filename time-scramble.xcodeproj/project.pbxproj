@@ -6,20 +6,133 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F0C05E000000000000000050 /* com.focustimescrambler.helper in Embed Privileged Helper */ = {isa = PBXBuildFile; fileRef = F0C05E000000000000000001 /* com.focustimescrambler.helper */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F0C05E000000000000000061 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8924FD62FE7CE83001FC912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F0C05E000000000000000030;
+			remoteInfo = PrivilegedHelper;
+		};
+		F0C05E000000000000000063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8924FD62FE7CE83001FC912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8924FDD2FE7CE83001FC912;
+			remoteInfo = "time-scramble";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F0C05E000000000000000048 /* Embed Privileged Helper */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/Library/LaunchServices;
+			dstSubfolderSpec = 1;
+			files = (
+				F0C05E000000000000000050 /* com.focustimescrambler.helper in Embed Privileged Helper */,
+			);
+			name = "Embed Privileged Helper";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		A8924FDE2FE7CE83001FC912 /* time-scramble.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "time-scramble.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C05E000000000000000001 /* com.focustimescrambler.helper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = com.focustimescrambler.helper; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C05E000000000000000002 /* time-scrambleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "time-scrambleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0C05E000000000000000003 /* PrivilegedHelperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrivilegedHelperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F0C05E000000000000000020 /* Exceptions for "time-scramble" folder in "time-scramble" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A8924FDD2FE7CE83001FC912 /* time-scramble */;
+		};
+		F0C05E000000000000000021 /* Exceptions for "PrivilegedHelper" folder in "PrivilegedHelper" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				launchd.plist,
+			);
+			target = F0C05E000000000000000030 /* PrivilegedHelper */;
+		};
+		F0C05E000000000000000022 /* Exceptions for "PrivilegedHelper" folder in "PrivilegedHelperTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				launchd.plist,
+				main.swift,
+			);
+			target = F0C05E000000000000000032 /* PrivilegedHelperTests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A8924FE02FE7CE83001FC912 /* time-scramble */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F0C05E000000000000000020 /* Exceptions for "time-scramble" folder in "time-scramble" target */,
+			);
 			path = "time-scramble";
+			sourceTree = "<group>";
+		};
+		F0C05E000000000000000010 /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F0C05E000000000000000011 /* PrivilegedHelper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F0C05E000000000000000021 /* Exceptions for "PrivilegedHelper" folder in "PrivilegedHelper" target */,
+				F0C05E000000000000000022 /* Exceptions for "PrivilegedHelper" folder in "PrivilegedHelperTests" target */,
+			);
+			path = PrivilegedHelper;
+			sourceTree = "<group>";
+		};
+		F0C05E000000000000000012 /* time-scrambleTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "time-scrambleTests";
+			sourceTree = "<group>";
+		};
+		F0C05E000000000000000013 /* PrivilegedHelperTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PrivilegedHelperTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A8924FDB2FE7CE83001FC912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000043 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000046 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +146,10 @@
 			isa = PBXGroup;
 			children = (
 				A8924FE02FE7CE83001FC912 /* time-scramble */,
+				F0C05E000000000000000010 /* Shared */,
+				F0C05E000000000000000011 /* PrivilegedHelper */,
+				F0C05E000000000000000012 /* time-scrambleTests */,
+				F0C05E000000000000000013 /* PrivilegedHelperTests */,
 				A8924FDF2FE7CE83001FC912 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				A8924FDE2FE7CE83001FC912 /* time-scramble.app */,
+				F0C05E000000000000000001 /* com.focustimescrambler.helper */,
+				F0C05E000000000000000002 /* time-scrambleTests.xctest */,
+				F0C05E000000000000000003 /* PrivilegedHelperTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,13 +175,16 @@
 				A8924FDA2FE7CE83001FC912 /* Sources */,
 				A8924FDB2FE7CE83001FC912 /* Frameworks */,
 				A8924FDC2FE7CE83001FC912 /* Resources */,
+				F0C05E000000000000000048 /* Embed Privileged Helper */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F0C05E000000000000000060 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A8924FE02FE7CE83001FC912 /* time-scramble */,
+				F0C05E000000000000000010 /* Shared */,
 			);
 			name = "time-scramble";
 			packageProductDependencies = (
@@ -69,6 +192,75 @@
 			productName = "time-scramble";
 			productReference = A8924FDE2FE7CE83001FC912 /* time-scramble.app */;
 			productType = "com.apple.product-type.application";
+		};
+		F0C05E000000000000000030 /* PrivilegedHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C05E000000000000000072 /* Build configuration list for PBXNativeTarget "PrivilegedHelper" */;
+			buildPhases = (
+				F0C05E000000000000000040 /* Sources */,
+				F0C05E000000000000000041 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F0C05E000000000000000010 /* Shared */,
+				F0C05E000000000000000011 /* PrivilegedHelper */,
+			);
+			name = PrivilegedHelper;
+			packageProductDependencies = (
+			);
+			productName = com.focustimescrambler.helper;
+			productReference = F0C05E000000000000000001 /* com.focustimescrambler.helper */;
+			productType = "com.apple.product-type.tool";
+		};
+		F0C05E000000000000000031 /* time-scrambleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C05E000000000000000075 /* Build configuration list for PBXNativeTarget "time-scrambleTests" */;
+			buildPhases = (
+				F0C05E000000000000000042 /* Sources */,
+				F0C05E000000000000000043 /* Frameworks */,
+				F0C05E000000000000000044 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F0C05E000000000000000062 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F0C05E000000000000000012 /* time-scrambleTests */,
+			);
+			name = "time-scrambleTests";
+			packageProductDependencies = (
+			);
+			productName = "time-scrambleTests";
+			productReference = F0C05E000000000000000002 /* time-scrambleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F0C05E000000000000000032 /* PrivilegedHelperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0C05E000000000000000078 /* Build configuration list for PBXNativeTarget "PrivilegedHelperTests" */;
+			buildPhases = (
+				F0C05E000000000000000045 /* Sources */,
+				F0C05E000000000000000046 /* Frameworks */,
+				F0C05E000000000000000047 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F0C05E000000000000000010 /* Shared */,
+				F0C05E000000000000000011 /* PrivilegedHelper */,
+				F0C05E000000000000000013 /* PrivilegedHelperTests */,
+			);
+			name = PrivilegedHelperTests;
+			packageProductDependencies = (
+			);
+			productName = PrivilegedHelperTests;
+			productReference = F0C05E000000000000000003 /* PrivilegedHelperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -82,6 +274,16 @@
 				TargetAttributes = {
 					A8924FDD2FE7CE83001FC912 = {
 						CreatedOnToolsVersion = 26.5;
+					};
+					F0C05E000000000000000030 = {
+						CreatedOnToolsVersion = 27.2;
+					};
+					F0C05E000000000000000031 = {
+						CreatedOnToolsVersion = 27.2;
+						TestTargetID = A8924FDD2FE7CE83001FC912;
+					};
+					F0C05E000000000000000032 = {
+						CreatedOnToolsVersion = 27.2;
 					};
 				};
 			};
@@ -100,12 +302,29 @@
 			projectRoot = "";
 			targets = (
 				A8924FDD2FE7CE83001FC912 /* time-scramble */,
+				F0C05E000000000000000030 /* PrivilegedHelper */,
+				F0C05E000000000000000031 /* time-scrambleTests */,
+				F0C05E000000000000000032 /* PrivilegedHelperTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A8924FDC2FE7CE83001FC912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000044 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000047 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +341,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F0C05E000000000000000040 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000042 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0C05E000000000000000045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F0C05E000000000000000060 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F0C05E000000000000000030 /* PrivilegedHelper */;
+			targetProxy = F0C05E000000000000000061 /* PBXContainerItemProxy */;
+		};
+		F0C05E000000000000000062 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8924FDD2FE7CE83001FC912 /* time-scramble */;
+			targetProxy = F0C05E000000000000000063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A8924FE72FE7CE84001FC912 /* Debug */ = {
@@ -179,7 +432,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -237,7 +490,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -254,11 +507,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3C89AWYM8Z;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "time-scramble/Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -286,11 +540,12 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3C89AWYM8Z;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "time-scramble/Info.plist";
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +560,122 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F0C05E000000000000000070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PrivilegedHelper/Info.plist;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/PrivilegedHelper/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.focustimescrambler.helper;
+				PRODUCT_NAME = com.focustimescrambler.helper;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0C05E000000000000000071 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CREATE_INFOPLIST_SECTION_IN_BINARY = YES;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = PrivilegedHelper/Info.plist;
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__launchd_plist,
+					"$(SRCROOT)/PrivilegedHelper/launchd.plist",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.focustimescrambler.helper;
+				PRODUCT_NAME = com.focustimescrambler.helper;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F0C05E000000000000000073 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "scramble.time-scrambleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/time-scramble.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/time-scramble";
+			};
+			name = Debug;
+		};
+		F0C05E000000000000000074 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "scramble.time-scrambleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/time-scramble.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/time-scramble";
+			};
+			name = Release;
+		};
+		F0C05E000000000000000076 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.focustimescrambler.helperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F0C05E000000000000000077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3C89AWYM8Z;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.focustimescrambler.helperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -326,6 +697,33 @@
 			buildConfigurations = (
 				A8924FEA2FE7CE84001FC912 /* Debug */,
 				A8924FEB2FE7CE84001FC912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C05E000000000000000072 /* Build configuration list for PBXNativeTarget "PrivilegedHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C05E000000000000000070 /* Debug */,
+				F0C05E000000000000000071 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C05E000000000000000075 /* Build configuration list for PBXNativeTarget "time-scrambleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C05E000000000000000073 /* Debug */,
+				F0C05E000000000000000074 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0C05E000000000000000078 /* Build configuration list for PBXNativeTarget "PrivilegedHelperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0C05E000000000000000076 /* Debug */,
+				F0C05E000000000000000077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

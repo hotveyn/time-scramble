@@ -140,8 +140,8 @@ Pause for a meeting or a time-sensitive task, then resume with the same settings
 
 ## Open questions
 
-1. **Time or timezone?** The user's earlier utility changed the timezone, not the clock. Timezone mode needs no root helper, XPC or NTP suppression and cannot leave the clock wrong, but minutes stay real (except +5:30 / +5:45 style zones). Decide before implementation.
-2. **Pause behaviour.** US-5 says the clock shows the last scrambled value while paused; the plan (data model, T013, XPC sequence) restores real time on pause. Pick one.
+1. **Time or timezone?** The user's earlier utility changed the timezone, not the clock. Timezone mode needs no root helper, XPC or NTP suppression and cannot leave the clock wrong, but minutes stay real (except +5:30 / +5:45 style zones). **Resolved 2026-11-08: change the system clock** (plan as written).
+2. **Pause behaviour.** US-5 says the clock shows the last scrambled value while paused; the plan (data model, T013, XPC sequence) restores real time on pause. **Resolved 2026-11-08: pause restores real time** (plan as written); US-5 step 1 is superseded.
 3. **Signing and permission UX** (T001, T002): Developer ID identity, `SMJobBless` entitlements, CI; dialog wording for error codes 1001–1004.
-4. **Sleep / hibernate** while active: re-scramble on wake, or pause?
+4. **Sleep / hibernate** while active: re-scramble on wake, or pause? **Resolved 2026-11-08: auto-pause on sleep** (`willSleep` runs the pause transition; the user resumes manually).
 5. **Timezone changed by the user** while active: ignore, or recompute the day bounds?
